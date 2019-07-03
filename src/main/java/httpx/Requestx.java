@@ -36,7 +36,7 @@ public class Requestx {
                     break;
                 }
                 headFinished = true;
-                if (r.method.equals("GET")) {
+                if (!r.method.equals("POST")) {
                     break;
                 }
                 continue;
