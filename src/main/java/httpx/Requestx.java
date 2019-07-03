@@ -13,10 +13,11 @@ public class Requestx {
     public String version;
     public String host;
     public RequestWriterx w;
-    public String body="";
     public Map<String, String> headers = new HashMap<>();
     //private
+    private String body="";
     private BufferedReader br;
+    private boolean alreadyReadBody = false;
     public static Requestx parseRequest(Socket socket) throws IOException {
         Requestx r = new Requestx();
         RequestWriterx w = RequestWriterx.parseRequestWriterx(socket);
@@ -24,29 +25,11 @@ public class Requestx {
         r.br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         //head
         String line;
-        boolean headFinished = false;
         boolean firstLineRead = false;
         while ((line = r.br.readLine()) != null) {
             // handle gap
             if (line.equals("")) {
-                if (headFinished) {
-                    if (r.body.endsWith("\n")) {
-                        r.body = r.body.substring(0, r.body.length() - 1);
-                    }
                     break;
-                }
-                headFinished = true;
-                if (!r.method.equals("POST")) {
-                    break;
-                }
-                continue;
-            }
-
-            // read body
-            if (headFinished) {
-                r.body += line;
-                r.body += "\n";
-                continue;
             }
 
             // read first line
@@ -72,5 +55,34 @@ public class Requestx {
             r.headers.put(ss[0], ss[1]);
         }
         return  r;
+    }
+    public String getBody() {
+        if (alreadyReadBody) {
+            return body;
+        }
+        alreadyReadBody = true;
+        long contentLength = 0;
+        String strContentLength="Content-Length";
+        if (headers.containsKey(strContentLength)) {
+            contentLength = Long.parseLong(headers.get(strContentLength));
+        }
+        if (contentLength == 0) {
+            return body;
+        }
+        try {
+            int b;
+            while ((b = br.read()) != -1) {
+                body += ((char) b) + "";
+                if (body.length() >= contentLength) {
+                    break;
+                }
+            }
+            if (body.endsWith("\n")) {
+                body = "changed";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return body;
     }
 }

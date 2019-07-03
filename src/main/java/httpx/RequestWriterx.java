@@ -24,16 +24,15 @@ public class RequestWriterx {
     public void finish() {
         pw.print(version + " " + status);
         br();
-        pw.print("Content-Type:" + contentType);
+        pw.print("Content-Type: " + contentType);
+        pw.print("Content-Length: "+String.valueOf(body.length()));
         br();
         br();
         pw.print(body);
-        br();
-        br();
         pw.flush();
     }
     private void br() {
-        pw.print("\r\n");
+        pw.print("\n");
     }
     public void setStatus400BadRequest() {
         status = "400 Bad Request";

@@ -15,8 +15,9 @@ public class Main {
         s.handleFunc("/", new Handlerx() {
             @Override
             public void handle(RequestWriterx w, Requestx r) {
-                System.out.println(r.uri);
-                w.writeString("hello");
+                System.out.println(r.getBody());
+                System.out.println("#"+r.getBody().length());
+                w.writeString(r.getBody());
             }
         });
         try {
