@@ -70,4 +70,13 @@ public class Httpx {
         this.r.get(r.uri).handle(r.w, r);
     }
 
+    public static String trimQuotationMarks(String s) {
+        if (s.startsWith("\"")) {
+            s = s.substring(1);
+        }
+        if (s.endsWith("\"")) {
+            s = s.substring(0, s.length() - 1);
+        }
+        return s;
+    }
 }

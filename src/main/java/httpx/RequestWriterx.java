@@ -18,6 +18,9 @@ public class RequestWriterx {
     }
 
     public void writeString(String body) {
+        if (status != null && !status.equals("200 OK")) {
+            return;
+        }
         this.body += body;
     }
 
