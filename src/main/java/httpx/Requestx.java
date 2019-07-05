@@ -13,11 +13,12 @@ public class Requestx {
     public String version;
     public String host;
     public RequestWriterx w;
-    public Map<String, String> headers = new HashMap<>();
+    private Map<String, String> headers = new HashMap<>();
     //private
     private String body="";
     private BufferedReader br;
     private boolean alreadyReadBody = false;
+    private String boundary;
     public static Requestx parseRequest(Socket socket) throws IOException {
         Requestx r = new Requestx();
         RequestWriterx w = RequestWriterx.parseRequestWriterx(socket);
@@ -84,5 +85,37 @@ public class Requestx {
             e.printStackTrace();
         }
         return body;
+    }
+
+    public String getHeader(String key) {
+        if (!headers.containsKey(key)) {
+            return "";
+        }
+        String value = headers.get(key);
+        if (value == null) {
+            return "";
+        }
+        return value.split("; ")[0];
+    }
+
+    public String getBoundary(){
+        if (boundary != null && !boundary.equals("")) {
+            return boundary;
+        }
+
+        if (!headers.containsKey("Content-Type")) {
+            return "";
+        }
+        String contentType = headers.get("Content-Type");
+        String[] strs = contentType.split("; ");
+        if (strs.length < 2) {
+            return "";
+        }
+        String[] bds=strs[1].split("=");
+        if (bds.length < 2) {
+            return "";
+        }
+        boundary="--"+bds[1];
+        return boundary;
     }
 }
