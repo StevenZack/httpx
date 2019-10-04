@@ -1,9 +1,8 @@
-import httpx.*;
 import io.github.gofaith.jywjl.httpx.*;
 
 public class Main {
     public static void main(String[] args) {
-        Httpx s = new Httpx();
+        HttpxServer s = new HttpxServer();
         s.handleFunc("/", new Handlerx() {
             @Override
             public void handle(RequestWriterx w, Requestx r) {

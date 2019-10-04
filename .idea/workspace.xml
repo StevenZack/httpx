@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9754561-fad3-4f91-8c8e-ea5b2c45bf5b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxURL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/github/gofaith/jywjl/httpx/HttpxURLTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/httpx/Handlerx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Handlerx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/httpx/Httpx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Httpx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/httpx/MultipartFormx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/MultipartFormx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/httpx/RequestWriterx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/RequestWriterx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/httpx/Requestx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Requestx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/httpx/HttpxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/gofaith/jywjl/httpx/HttpxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Httpx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Httpx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Requestx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Requestx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/gofaith/jywjl/httpx/HttpxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/gofaith/jywjl/httpx/HttpxTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,13 +45,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>syste</find>
-      <find>sys</find>
-      <find>system</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -77,6 +67,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="io.github.gofaith.jywjl.httpx" />
       <recent name="httpx" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -98,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.HttpxURLTest.parse">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="httpx.main" />
@@ -137,8 +128,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HttpxURLTest.parse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="httpx.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.gofaith.jywjl.httpx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.gofaith.jywjl.httpx" />
+      <option name="MAIN_CLASS_NAME" value="io.github.gofaith.jywjl.httpx.HttpxURLTest" />
+      <option name="METHOD_NAME" value="parse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HttpxURLTest.parse" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.HttpxTest" />
         <item itemvalue="JUnit.HttpxTest.parseSemicolon" />
@@ -186,22 +194,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/MultipartFormx.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/httpx$HttpxTest.ic" NAME="HttpxTest Coverage Results" MODIFIED="1562309553182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

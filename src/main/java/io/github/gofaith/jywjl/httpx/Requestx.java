@@ -21,7 +21,19 @@ public class Requestx {
     private String boundary;
     private long contentLength=-1;
     private boolean multipartReadTheEnd=true;
-    public static Requestx parseRequest(Socket socket) throws IOException {
+
+    public Requestx(String method,String url,String body) throws Exception {
+        this.method=method;
+        this.alreadyReadBody = true;
+        this.body=body;
+        HttpxURL httpxURL = HttpxURL.parse(url);
+        this.host = httpxURL.addr;
+        this.uri = httpxURL.uri;
+    }
+    private Requestx(){
+    }
+
+    public static Requestx parseRequest(Socket socket) throws Exception {
         Requestx r = new Requestx();
         RequestWriterx w = RequestWriterx.parseRequestWriterx(socket);
         r.w = w;
@@ -164,13 +176,13 @@ public class Requestx {
                 //name
                 String[] namekv=values[1].split("=");
                 if (namekv.length == 2&&namekv[0].equals("name")) {
-                    x.name = Httpx.trimQuotationMarks(namekv[1]);
+                    x.name = HttpxServer.trimQuotationMarks(namekv[1]);
                 }
                 // filename
                 if (values.length >= 3) {
                     String[] filenamekv=values[2].split("=");
                     if (filenamekv.length == 2 && filenamekv[0].equals("filename")) {
-                        x.filename = Httpx.trimQuotationMarks(filenamekv[1]);
+                        x.filename = HttpxServer.trimQuotationMarks(filenamekv[1]);
                     }
                 }
                 continue;
