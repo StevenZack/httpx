@@ -4,14 +4,14 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class RequestWriterx {
+public class HttpxResponseWriter {
     private PrintWriter pw;
     private String version = "HTTP/1.1";
     private String status = "200 OK";
     private String contentType = "text/plain";
     private String body = "";
-    public static RequestWriterx parseRequestWriterx(Socket socket) throws IOException {
-        RequestWriterx w = new RequestWriterx();
+    public static HttpxResponseWriter parseRequestWriterx(Socket socket) throws IOException {
+        HttpxResponseWriter w = new HttpxResponseWriter();
         PrintWriter pw = new PrintWriter(socket.getOutputStream());
         w.pw = pw;
         return  w;

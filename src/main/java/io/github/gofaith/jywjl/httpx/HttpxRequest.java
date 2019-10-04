@@ -7,12 +7,13 @@ import java.net.Socket;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Requestx {
+public class HttpxRequest {
     public String method;
     public String uri;
     public String version;
     public String host;
-    public RequestWriterx w;
+    public HttpxURL httpxURL;
+    public HttpxResponseWriter w;
     private Map<String, String> headers = new HashMap<>();
     //private
     private String body="";
@@ -22,20 +23,20 @@ public class Requestx {
     private long contentLength=-1;
     private boolean multipartReadTheEnd=true;
 
-    public Requestx(String method,String url,String body) throws Exception {
+    public HttpxRequest(String method, String url, String body) throws Exception {
         this.method=method;
         this.alreadyReadBody = true;
         this.body=body;
-        HttpxURL httpxURL = HttpxURL.parse(url);
+        httpxURL = HttpxURL.parse(url);
         this.host = httpxURL.addr;
         this.uri = httpxURL.uri;
     }
-    private Requestx(){
+    private HttpxRequest(){
     }
 
-    public static Requestx parseRequest(Socket socket) throws Exception {
-        Requestx r = new Requestx();
-        RequestWriterx w = RequestWriterx.parseRequestWriterx(socket);
+    public static HttpxRequest parseRequest(Socket socket) throws Exception {
+        HttpxRequest r = new HttpxRequest();
+        HttpxResponseWriter w = HttpxResponseWriter.parseRequestWriterx(socket);
         r.w = w;
         r.br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         //head
@@ -141,8 +142,8 @@ public class Requestx {
         return boundary;
     }
 
-    public MultipartFormx readMultipart() throws IOException {
-        MultipartFormx x = new MultipartFormx(br, getBoundary(), new MultipartFormx.ReachTheEnd() {
+    public HttpxMultipartForm readMultipart() throws IOException {
+        HttpxMultipartForm x = new HttpxMultipartForm(br, getBoundary(), new HttpxMultipartForm.ReachTheEnd() {
             @Override
             public void setEnd(boolean b) {
                 multipartReadTheEnd = !b;

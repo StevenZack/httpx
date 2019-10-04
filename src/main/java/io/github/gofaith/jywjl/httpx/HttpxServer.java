@@ -9,21 +9,21 @@ import java.util.List;
 import java.util.Map;
 
 public class HttpxServer {
-    private Map<String, Handlerx> r = new HashMap<>();
-    private Map<String, Handlerx> mr = new HashMap<>();
-    private List<Handlerx> pr = new ArrayList<>();
+    private Map<String, HttpxHandler> r = new HashMap<>();
+    private Map<String, HttpxHandler> mr = new HashMap<>();
+    private List<HttpxHandler> pr = new ArrayList<>();
     private ServerSocket server;
 
-    public void handleFunc(String uri, Handlerx handlerx) {
-        r.put(uri, handlerx);
+    public void handleFunc(String uri, HttpxHandler httpxHandler) {
+        r.put(uri, httpxHandler);
     }
 
-    public void handleMultiReq(String uri, Handlerx handlerx) {
-        mr.put(uri, handlerx);
+    public void handleMultiReq(String uri, HttpxHandler httpxHandler) {
+        mr.put(uri, httpxHandler);
     }
 
-    public void addPrehandler(Handlerx handlerx) {
-        pr.add(handlerx);
+    public void addPrehandler(HttpxHandler httpxHandler) {
+        pr.add(httpxHandler);
     }
 
     public void listenAndServe(int port) throws Exception{
@@ -46,7 +46,7 @@ public class HttpxServer {
 
     private void handleConn(Socket c)  {
         try {
-            Requestx r = Requestx.parseRequest(c);
+            HttpxRequest r = HttpxRequest.parseRequest(c);
             if (r == null) {
                 return;
             }
@@ -57,7 +57,7 @@ public class HttpxServer {
         }
     }
 
-    private void route(Requestx r) {
+    private void route(HttpxRequest r) {
         //pr
         for (int i = 0; i < pr.size(); i++) {
             pr.get(i).handle(r.w,r);

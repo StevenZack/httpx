@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9754561-fad3-4f91-8c8e-ea5b2c45bf5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxURL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/github/gofaith/jywjl/httpx/HttpxURLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Httpx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Httpx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Requestx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Requestx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/gofaith/jywjl/httpx/HttpxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/gofaith/jywjl/httpx/HttpxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Handlerx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/MultipartFormx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxMultipartForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/RequestWriterx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxResponseWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Requestx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxRequest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +40,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -165,20 +165,6 @@
       <updated>1562123129161</updated>
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="HttpxTest_parseSemicolon - 2019.07.05 at 14h 51m 57s.xml">
-      <configuration name="HttpxTest.parseSemicolon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpxTest_parseSemicolon - 2019.07.05 at 14h 52m 23s.xml">
-      <configuration name="HttpxTest.parseSemicolon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpxTest - 2019.07.05 at 14h 52m 34s.xml">
-      <configuration name="HttpxTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpxTest - 2019.07.05 at 16h 10m 30s.xml">
-      <configuration name="HttpxTest" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

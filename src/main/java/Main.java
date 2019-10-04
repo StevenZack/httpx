@@ -3,13 +3,13 @@ import io.github.gofaith.jywjl.httpx.*;
 public class Main {
     public static void main(String[] args) {
         HttpxServer s = new HttpxServer();
-        s.handleFunc("/", new Handlerx() {
+        s.handleFunc("/", new HttpxHandler() {
             @Override
-            public void handle(RequestWriterx w, Requestx r) {
+            public void handle(HttpxResponseWriter w, HttpxRequest r) {
                 System.out.println(r.uri);
                 while (r.isMultipartNotEnd()) {
                     try {
-                        MultipartFormx x = r.readMultipart();
+                        HttpxMultipartForm x = r.readMultipart();
                         if (x.isFile()) {
                             System.out.println("file:"+x.filename);
                             x.saveFile(x.filename);

@@ -2,7 +2,7 @@ package io.github.gofaith.jywjl.httpx;
 
 import java.io.*;
 
-public class MultipartFormx {
+public class HttpxMultipartForm {
     public String contentDiposition;
     public String name;
     public String filename;
@@ -12,7 +12,7 @@ public class MultipartFormx {
     private final String boundary;
     private final BufferedReader br;
     private final ReachTheEnd reachTheEnd;
-    public MultipartFormx(BufferedReader br, String boundary, ReachTheEnd reachTheEnd) {
+    public HttpxMultipartForm(BufferedReader br, String boundary, ReachTheEnd reachTheEnd) {
         this.br=br;
         this.boundary = boundary;
         this.reachTheEnd = reachTheEnd;
