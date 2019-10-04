@@ -28,6 +28,7 @@ public class HttpxResponseWriter {
         pw.print(version + " " + status);
         br();
         pw.print("Content-Type: " + contentType);
+        br();
         pw.print("Content-Length: "+String.valueOf(body.length()));
         br();
         br();

@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9754561-fad3-4f91-8c8e-ea5b2c45bf5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Handlerx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Httpx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Httpx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/MultipartFormx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxMultipartForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/RequestWriterx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxResponseWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Requestx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxResponseWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxResponseWriter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HttpxURLTest.parse">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="httpx.main" />
@@ -146,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HttpxURLTest.parse" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.HttpxURLTest.parse" />
         <item itemvalue="JUnit.HttpxTest" />
         <item itemvalue="JUnit.HttpxTest.parseSemicolon" />
       </list>
@@ -187,6 +184,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxResponse.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/httpx$HttpxTest.ic" NAME="HttpxTest Coverage Results" MODIFIED="1562309553182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
