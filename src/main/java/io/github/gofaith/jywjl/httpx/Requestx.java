@@ -1,4 +1,4 @@
-package httpx;
+package io.github.gofaith.jywjl.httpx;
 
 import java.io.BufferedReader;
 import java.io.IOException;
