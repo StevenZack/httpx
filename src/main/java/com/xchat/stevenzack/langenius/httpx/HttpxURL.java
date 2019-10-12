@@ -1,4 +1,4 @@
-package io.github.gofaith.jywjl.httpx;
+package com.xchat.stevenzack.langenius.httpx;
 
 public class HttpxURL {
     public String scheme,host,addr,uri;

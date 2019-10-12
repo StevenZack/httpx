@@ -1,8 +1,6 @@
-package io.github.gofaith.jywjl.httpx;
+package com.xchat.stevenzack.langenius.httpx;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class HttpxURLTest {
 

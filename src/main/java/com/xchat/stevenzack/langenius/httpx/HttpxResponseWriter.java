@@ -1,4 +1,4 @@
-package io.github.gofaith.jywjl.httpx;
+package com.xchat.stevenzack.langenius.httpx;
 
 import java.io.IOException;
 import java.io.PrintWriter;

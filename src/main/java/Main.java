@@ -1,3 +1,7 @@
+import com.xchat.stevenzack.langenius.httpx.Httpx;
+import com.xchat.stevenzack.langenius.httpx.HttpxClient;
+import com.xchat.stevenzack.langenius.httpx.HttpxRequest;
+import com.xchat.stevenzack.langenius.httpx.HttpxResponse;
 import io.github.gofaith.jywjl.httpx.*;
 
 public class Main {
