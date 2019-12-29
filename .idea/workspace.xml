@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9754561-fad3-4f91-8c8e-ea5b2c45bf5b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/Httpx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/Httpx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxMultipartForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxMultipartForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxRequest.java" afterDir="false" />
-    </list>
+    <list default="true" id="b9754561-fad3-4f91-8c8e-ea5b2c45bf5b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,22 +185,22 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="808" y="414" width="298" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1577649481084" />
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1577656837595">
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1577657210172">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1577656837595" />
-    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1577656837595">
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1577657210172" />
+    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1577657210170">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1577656837595" />
-    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1577656837595">
+    <state width="1874" height="275" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1577657210170" />
+    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1577657210168">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1577656837595" />
-    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1577656837595">
+    <state width="1874" height="275" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1577657210168" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1577657210171">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1577656837595" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1577657210171" />
     <state x="456" y="157" key="SettingsEditor" timestamp="1577650529376">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>

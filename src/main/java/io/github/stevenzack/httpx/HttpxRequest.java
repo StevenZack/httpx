@@ -1,4 +1,4 @@
-package com.xchat.stevenzack.langenius.httpx;
+package io.github.stevenzack.httpx;
 
 import java.io.*;
 import java.net.Socket;

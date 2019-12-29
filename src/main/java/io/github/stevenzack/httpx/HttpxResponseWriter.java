@@ -1,8 +1,7 @@
-package com.xchat.stevenzack.langenius.httpx;
+package io.github.stevenzack.httpx;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.HashMap;

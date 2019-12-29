@@ -1,6 +1,5 @@
-package com.xchat.stevenzack.langenius.httpx;
+package io.github.stevenzack.httpx;
 
-import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;

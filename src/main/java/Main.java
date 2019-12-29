@@ -1,7 +1,4 @@
-import com.xchat.stevenzack.langenius.httpx.*;
-
-import java.io.File;
-import java.nio.file.Files;
+import io.github.stevenzack.httpx.*;
 
 public class Main {
     public static void main(String[] args) {
