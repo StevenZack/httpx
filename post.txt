@@ -1,0 +1,19 @@
+-----------------------------4081991016864103351285824247
+Content-Disposition: form-data; name="file"; filename="index.html"
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>title</title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<form method="post" enctype="multipart/form-data" action="/upload">
+	<input type="file" name="file">
+	<input type="submit" value="submit">
+	</form>
+</body>
+</html>
+-----------------------------4081991016864103351285824247--

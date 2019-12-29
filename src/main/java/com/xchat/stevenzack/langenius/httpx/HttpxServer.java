@@ -1,8 +1,9 @@
 package com.xchat.stevenzack.langenius.httpx;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -17,11 +18,31 @@ public class HttpxServer {
     public void handleFunc(String uri, HttpxHandler httpxHandler) {
         r.put(uri, httpxHandler);
     }
-
     public void handleMultiReq(String uri, HttpxHandler httpxHandler) {
         mr.put(uri, httpxHandler);
     }
 
+    public void handleFile(String uri, String path) {
+        handleFunc(uri, new HttpxHandler() {
+            @Override
+            public void handle(HttpxResponseWriter w, HttpxRequest r) {
+                File f = new File(path);
+                if (!f.exists()) {
+                    w.setStatus404NotFound();
+                    return;
+                }
+                try {
+                    String mime=Files.probeContentType(f.toPath());
+                    w.setContentType(mime);
+                    w.setContentLength(f.length());
+                    w.fromReader(new BufferedReader(new FileReader(f)));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    w.writeString(e.getMessage());
+                }
+            }
+        });
+    }
     public void addPrehandler(HttpxHandler httpxHandler) {
         pr.add(httpxHandler);
     }
