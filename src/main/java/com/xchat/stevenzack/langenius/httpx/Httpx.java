@@ -16,7 +16,7 @@ public class Httpx {
         return out;
     }
 
-    class RollingWindow{
+    public static class RollingWindow{
         private int size;
         private List<Integer> list = new ArrayList<>();
         private RollingWindow(){}
@@ -28,13 +28,16 @@ public class Httpx {
             return size;
         }
 
-        public void push(int i) {
+        public int push(int i) {
             list.add(i);
             if (list.size() > size) {
+                int first = list.get(0);
                 list.remove(0);
+                return first;
             }
+            return -1;
         }
-        public String toString(){
+        public String getString(){
             byte[] bytes = new byte[list.size()];
             for (int i = 0; i < list.size(); i++) bytes[i] = list.get(i).byteValue();
             return new String(bytes, StandardCharsets.UTF_8);

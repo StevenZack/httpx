@@ -66,29 +66,23 @@ public class HttpxMultipartForm {
         }
         file.createNewFile();
         PrintWriter pw = new PrintWriter(new FileWriter(file));
-        String line,lastLine = null;
-        while ((line = br.readLine()) != null) {
-            if (line.equals(boundary + "--")) {
-                if (lastLine != null) {
-                    pw.print(lastLine);
-                }
+        Httpx.RollingWindow rollingWindow = new Httpx.RollingWindow(boundary.length()+1);
+        int b;
+        while ((b = br.read()) != -1) {
+            int back = rollingWindow.push(b);
+            if (back == -1) {
+                continue;
+            }
+            String str=rollingWindow.getString();
+            if (str.equals(boundary + "-")) {
                 reachTheEnd.setEnd(true);
                 break;
             }
-            if (line.equals(boundary)) {
-                if (lastLine != null) {
-                    pw.print(lastLine);
-                }
-                break;
-            }
-            if (lastLine == null) {
-                lastLine = line;
+            if (str.endsWith(boundary )) {
                 continue;
             }
-            pw.println(lastLine);
-            lastLine = line;
+            pw.write(back);
         }
         pw.close();
-        System.out.println("saved:"+file.getAbsolutePath());
     }
 }

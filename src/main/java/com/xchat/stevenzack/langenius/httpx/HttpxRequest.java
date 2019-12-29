@@ -19,7 +19,7 @@ public class HttpxRequest {
     private boolean alreadyReadBody = false;
     private String boundary;
     private long contentLength=-1;
-    private boolean multipartReadTheEnd=true;
+    private boolean multipartReachEnd =false;
 
     public HttpxRequest(String method, String url, String body) throws Exception {
         this.method=method;
@@ -174,14 +174,14 @@ public class HttpxRequest {
         HttpxMultipartForm x = new HttpxMultipartForm(br, getBoundary(), new HttpxMultipartForm.ReachTheEnd() {
             @Override
             public void setEnd(boolean b) {
-                multipartReadTheEnd = !b;
+                multipartReachEnd = b;
             }
         });
         String boundary = getBoundary();
         String line;
         while ((line = br.readLine()) != null) {
             if (line.equals(boundary + "--")) {
-                multipartReadTheEnd = true;
+                multipartReachEnd = true;
                 break;
             }
             if (line.equals(boundary)) {
@@ -226,7 +226,7 @@ public class HttpxRequest {
         }
         return  x;
     }
-    public boolean isMultipartNotEnd() {
-        return multipartReadTheEnd;
+    public boolean isMultipartEnd() {
+        return multipartReachEnd;
     }
 }
