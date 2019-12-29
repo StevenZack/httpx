@@ -59,7 +59,7 @@ public class HttpxMultipartForm {
     public void saveFile(String dst) throws Exception {
         File file = new File(dst);
         if (file.isDirectory()) {
-            throw new Exception("file " + dst + " is a dir");
+            throw new Exception(dst + " is not a file");
         }
         if (file.exists()) {
             file.delete();

@@ -1,8 +1,6 @@
 package com.xchat.stevenzack.langenius.httpx;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.Socket;
 import java.util.HashMap;
 import java.util.Map;
@@ -89,25 +87,55 @@ public class HttpxRequest {
             return body;
         }
         alreadyReadBody = true;
-        long contentLength = getContentLength();
-        if (contentLength == 0) {
+        if (getContentLength() == 0) {
             return body;
         }
         try {
             int b;
             while ((b = br.read()) != -1) {
                 body += ((char) b) + "";
-                if (body.length() >= contentLength) {
+                if (body.length() >= getContentLength()) {
                     break;
                 }
-            }
-            if (body.endsWith("\n")) {
-                body = "changed";
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
         return body;
+    }
+
+    public void saveBodyToFile(String dst)throws Exception {
+        File file = new File(dst);
+        if (file.isDirectory()) {
+            throw new Exception("dst " + dst + " is not a file");
+        }
+        if (file.exists()) {
+            file.delete();
+        }
+        file.createNewFile();
+        PrintWriter printWriter = new PrintWriter(new FileWriter(file));
+        if (alreadyReadBody) {
+            printWriter.write(body);
+            printWriter.flush();
+            printWriter.close();
+            return;
+        }
+        alreadyReadBody = true;
+        if (getContentLength() == 0) {
+            printWriter.close();
+            return;
+        }
+        int b;
+        int readLength = 0;
+        while ((b = br.read()) != -1) {
+            printWriter.write(b);
+            readLength++;
+            if (readLength >= getContentLength()) {
+                break;
+            }
+        }
+        printWriter.flush();
+        printWriter.close();
     }
 
     public String getHeader(String key) {

@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9754561-fad3-4f91-8c8e-ea5b2c45bf5b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/Httpx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/Httpx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxMultipartForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxMultipartForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxResponseWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxResponseWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/gofaith/jywjl/httpx/HttpxURL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxURL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/gofaith/jywjl/httpx/HttpxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xchat/stevenzack/langenius/httpx/HttpxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/gofaith/jywjl/httpx/HttpxURLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xchat/stevenzack/langenius/httpx/HttpxURLTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/Httpx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/Httpx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxMultipartForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxMultipartForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xchat/stevenzack/langenius/httpx/HttpxRequest.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +51,9 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -79,18 +75,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -156,6 +140,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -190,6 +186,32 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="808" y="414" width="298" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1577649481084">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state x="808" y="414" width="298" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1577649481084" />
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1577649503103">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1577649503103" />
+    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1577649503102">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state width="1874" height="275" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1577649503102" />
+    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1577649503102">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state width="1874" height="275" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1577649503102" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1577649503103">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state width="1874" height="275" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1577649503103" />
+    <state x="456" y="157" key="SettingsEditor" timestamp="1577648718932">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state x="456" y="157" key="SettingsEditor/0.0.1920.1043@0.0.1920.1043" timestamp="1577648718932" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
